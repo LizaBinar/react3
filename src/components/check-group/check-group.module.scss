@@ -1,0 +1,32 @@
+@import 'src/index';
+
+:export {
+  colorBorder: $color-check-box__border;
+}
+
+.check-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.check-group__place {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding-top: $padding1;
+  padding-bottom: $padding1;
+  padding-left: $padding2;
+}
+
+.check-group__box {
+  cursor: pointer !important;
+}
+
+.check-group__place:last-child {
+  padding-bottom: $padding2;
+}
+
+.check-group__place:hover {
+  background-color: $light-blue;
+}

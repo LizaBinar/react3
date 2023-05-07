@@ -1,0 +1,21 @@
+$bg-color: #e5e5e5;
+$white: white;
+$color-check-box__border: #9abbce;
+$gray: #a0b0b9;
+$light-blue: #f1fcff;
+$color-check-box__border: #9abbce;
+$colorBorder: #dfe5ec;
+$blue: #2196f3;
+$big-blue: #3c46ff;
+
+$main-width: 504px;
+$btn-width: $main-width / 3;
+
+$padding1: 10px;
+$padding2: 20px;
+
+%card {
+  background-color: $white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}

@@ -1,0 +1,9 @@
+@import 'src/index';
+
+.btn-next {
+  max-width: $main-width;
+  border-radius: 5px;
+  background-color: $blue;
+  color: $white;
+  padding: 15px;
+}

@@ -1,0 +1,33 @@
+@import './src/index';
+
+.filters {
+  @extend %card;
+  border-radius: 5px;
+  min-width: $main-width / 2;
+  max-width: $main-width;
+  width: 100%;
+}
+
+.filters__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters__header {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #4a4a4a;
+  padding-top: $padding2;
+  padding-bottom: $padding1;
+  padding-left: $padding2;
+}
+
+@media screen and (min-width: 780px) {
+  .filters {
+    width: 0;
+  }
+}

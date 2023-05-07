@@ -1,0 +1,39 @@
+@import './src/index';
+
+.button {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.buttons {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: $white;
+}
+
+.buttons label {
+  width: 33%;
+}
+
+.buttons label:nth-child(2) {
+  width: 34%;
+}
+
+@media screen and (min-width: 506px) {
+  .button {
+    font-size: 12px;
+  }
+  .buttons {
+    width: $main-width;
+  }
+}
+
+:export {
+  colorBorder: $colorBorder;
+  colorPrimary: $blue;
+  colorPrimaryHover: $big-blue;
+}

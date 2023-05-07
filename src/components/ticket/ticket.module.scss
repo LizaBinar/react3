@@ -1,0 +1,63 @@
+@import './src/index';
+
+.ticket {
+  @extend %card;
+  max-width: $main-width;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.ticket__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket__price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  color: $blue;
+}
+
+.ticket__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  width: 100%;
+}
+
+.ticket__segment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.ticket__column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ticket__cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket__cell p {
+  color: $gray;
+}
+
+.ticket__logo {
+  width: 100%;
+  max-width: 120px;
+}

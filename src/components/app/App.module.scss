@@ -1,0 +1,46 @@
+@import '../../index';
+
+.app {
+  background-color: $bg-color;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 20px;
+}
+
+.app__header {
+  width: 100%;
+  height: 160px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.app__right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 506px) {
+  .app__right {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .app__main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

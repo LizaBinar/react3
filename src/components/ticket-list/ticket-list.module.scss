@@ -1,0 +1,15 @@
+@import './src/index';
+
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loader-card {
+  @extend %card;
+  max-width: $main-width;
+
+  height: 195px;
+  padding: 0;
+}
